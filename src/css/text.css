@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&family=Trirong:wght@300;400;600&display=swap');
+
+/* ตั้งค่าหน้า */
+body,
+html,
+input,
+select,
+label,
+textarea,
+button {
+  padding: 0;
+  margin: 0;
+  font-size: 8px;
+  font-style: normal;
+  font-family: 'Trirong', serif;
+  color: #793D00;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+textarea {
+  resize: none;
+}
+select,
+option {
+  background-color: transparent;
+}
+
+.xm2-text {
+    font-style: normal;
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .xm-text {
+    font-style: normal;
+    margin: 0;
+    font-size: 1.75em;
+  }
+  
+  .ssm-text {
+    font-style: normal;
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  .sm-text {
+    font-style: normal;
+    margin: 0;
+    font-size: 2.15em;
+  }
+  
+  .md-text {
+    font-style: normal;
+    margin: 0;
+    font-size: 2.25em;
+  }
+  
+  .bg-text {
+    font-style: normal;
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .bg2-text {
+    font-style: normal;
+    margin: 0;
+    font-size: 2.75em;
+  }
+  
+  .bg3-text {
+    font-style: normal;
+    margin: 0;
+    font-size: 3em;
+  }
+  
+  .bg4-text {
+    font-style: normal;
+    margin: 0;
+    font-size: 3.25em;
+  }
+
+  .bg5-text {
+    font-style: normal;
+    margin: 0;
+    font-size: 7em;
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+
+  .w100{
+      font-weight: 100;
+  }
+
+  .w400{
+      font-weight: 400;
+  }
+
+  .w600{
+      font-weight: 600;
+  }
+
+  .white-text{
+      color: #ffffff;
+  }
+
+  .button{
+      border-radius: 24px;
+      border: 1px solid #793D00;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      margin-top: 15px;
+      cursor: pointer;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .xm2-text {
+      font-size: 1.25em;
+    }
+  
+    .xm-text {
+      font-size: 1.5em;
+    }
+  
+    .ssm-text {
+      font-size: 1.75em;
+    }
+  
+    .sm-text {
+      font-size: 1.9em;
+    }
+  
+    .md-text {
+      font-size: 2em;
+    }
+  
+    .bg-text {
+      font-size: 2.25em;
+    }
+  
+    .bg2-text {
+      font-size: 2.5em;
+    }
+  
+    .bg3-text {
+      font-size: 2.75em;
+    }
+  
+    .bg4-text {
+      font-size: 3em;
+    }
+  }
+  
+  @media screen and (max-width: 414px) {
+    .bg-text {
+      font-size: 2em;
+    }
+  }

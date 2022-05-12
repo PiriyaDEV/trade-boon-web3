@@ -1,0 +1,18 @@
+#main > div{
+    background-image: url("../../images/bg/main_bg.jpeg");
+    background-size:     cover;
+    background-repeat:   repeat-y;
+    background-position: center center;
+}
+
+#main-banner-section{
+    margin: 50px 0px;
+    gap: 60px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#wai-pic{
+    width: 450px;
+}
