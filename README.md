@@ -1,12 +1,11 @@
-# Mahao Mahao Pets Shop 🐕
+# TRADE BOON " เว็ปทำบุญออนไลน์ 🙏
 This project is a part CPE494 Blockchain Technology course. To learn about the Truffle and Ganache Ethereum smart contract development platform, as well as basics of how smart contracts work and how they are deployed onto the chain. 
 
 * * *
 
 ### 💻 Features  ###
-* Pet Store
-* Product Store
-* Donation
+* Donate Money
+* ETC.
 
 ***
 
@@ -34,6 +33,7 @@ yarn dev
 5. Open http://localhost:3000 to view it in the browser
 * * *
 
-### 👩‍💻 Created by  ###
-* 62070503420 Nacha Hirunyakarn 	  (Pungjung)
-* 62070503451 Supavadee Phusanam	  (Ying)
+### 🧑‍💻 Created by  ###
+* 62070503438 Piriya Chaigul
+* 62070503442 Phumiphat Tatiyawongsoonthorn
+* 62070503446 Worachot Yuwamirt
