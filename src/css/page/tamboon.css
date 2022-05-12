@@ -1,0 +1,148 @@
+#tamboon > div{
+    background-image: url("../../images/bg/main_bg.jpeg");
+    background-size:     cover;
+    background-repeat:   repeat-y;
+    background-position: center center;
+}
+
+#tamboon-select-section{
+    margin: 70px 0px 100px 0px;
+}
+
+#tamboon-select{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    row-gap: 20px;
+}
+
+.tamboon-region{
+    padding: 70px 25px;
+    background-size:     cover;
+    background-position: center center;
+    border-radius: 27px;
+    background-color:rgba(0, 0, 0, 0.6);
+
+    position: relative;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.tamboon-region:hover{
+    transform: scale(1.05);
+  }
+
+.tamboon-region > h1{
+    position: relative;
+    color: #ffffff;
+}
+
+.tamboon-region::before{
+    content: "";
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+    border-radius: 27px;
+}
+
+.north-region::before{
+    background-image: url("../../images/tamboon/north.jpeg");
+}
+
+.esan-region::before{
+    background-image: url("../../images/tamboon/esan.jpeg");
+}
+
+.east-region::before{
+    background-image: url("../../images/tamboon/east.jpeg");
+}
+
+.west-region::before{
+    background-image: url("../../images/tamboon/west.jpeg");
+}
+
+.central-region::before{
+    background-image: url("../../images/tamboon/central.jpeg");
+}
+
+.south-region::before{
+    background-image: url("../../images/tamboon/south.jpeg");
+}
+
+#temple-select-section{
+    margin-top: 50px;
+    display: none;
+}
+
+#temple-select{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 70px;
+    row-gap: 30px;
+    display: grid;
+}
+
+.temple-flex{
+    background-color: #75623c;
+    border-radius: 27px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.temple-flex:hover{
+transform: scale(1.05);
+}
+
+.temple-flex > div{
+    padding: 10px 15px 30px 15px;
+}
+
+.temple-flex > img{
+    width: 100%;
+    border-top-right-radius: 27px;
+    border-top-left-radius: 27px;
+}
+
+.rating-star{
+    width: 20px;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.temple-info {
+    margin-top: 10px;
+}
+
+.rating > div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#temple-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#temple-search > input{
+    width: 80%;
+}
+
+#temple-search > button{
+    border-radius: 27px;
+    padding: 5px 30px;
+    border: 1px solid #793D00;
+    background-color: #ffffff;
+    cursor: pointer;
+}
