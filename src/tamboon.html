@@ -98,11 +98,11 @@
                     </div>
 
                     <div id="temple-select">
-                        <div class="temple-flex" onclick="packageSelect(temple)"">
+                        <!-- <div class="temple-flex" data-id="0" onclick="packageSelect(temple)"">
                             <img src="./images/tamboon/central.jpeg" alt=""/>
                             <div>
-                                <h1 class="temple-info white-text md-text">ชื่อวัด: วัดดูยูมีน</h1>
-                                <h1 class="temple-info white-text md-text">จังหวัด: ชลบุรี</h1>
+                                <h1 class="temple-info white-text md-text">ชื่อวัด: <span class="temple-name">N/A</span></h1>
+                                <h1 class="temple-info white-text md-text">จังหวัด: <span class="temple-province">N/A</span></h1>
                                 <div class="rating">
                                     <h1 class="white-text md-text">เรตติ้ง: </h1>
                                     <div>
@@ -114,10 +114,34 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <!-- เลือกวัด -->
+
+                <!-- วัด -->
+                <div class="temple-template" style="display: none;" data-id="0">
+                    <div class="temple-flex" onclick="packageSelect(temple)"">
+                        <img class="temple-picture" src="./images/tamboon/central.jpeg" alt=""/>
+                        <div>
+                            <h1 class="temple-info white-text md-text">ชื่อวัด: <span class="temple-name">N/A</span></h1>
+                            <h1 class="temple-info white-text md-text">จังหวัด: <span class="temple-province">N/A</span></h1>
+                            <div class="rating">
+                                <h1 class="white-text md-text">เรตติ้ง: </h1>
+                            <div id="temple-rating-list">
+                                
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rating-template" style="display: none;" data-id="0">
+                    <img class="rating-star" src="./images/tamboon/icons8-star-100.png" alt=""/>
+                </div>
+                <!-- วัด -->
+
+                
 
                 <!-- เลือกแพคเกจ -->
                 <div id="package-select-section">

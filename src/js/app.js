@@ -1,19 +1,8 @@
 App = {
   web3Provider: null,
   contracts: {},
-  temples: [],
-  showing: [],
 
   init: async function () {
-    // get temple data
-    $.getJSON("../data/temples.json", function (data) {
-      temples = [...data];
-      showing = [...data];
-
-      showing.sort((templeA, templeB) => templeA.name.localeCompare(templeB.name, 'th'));
-      App.showTemples();
-    });
-
     return await App.initWeb3();
   },
 
@@ -101,17 +90,6 @@ App = {
         document.getElementById("my_balance").innerHTML = balance;
       }
     });
-  },
-
-  showTemples: function () {
-    const templeList = $("#temple-select").empty();
-    const templeFlex = $(".temple-flex");
-
-    for (let i = 0; i < temples.length; i++) {
-      starTemplate.find(".star-age").text(stars_display[i].age);
-    }
-
-    templeList.append(templeFlex.html());
   },
 };
 
