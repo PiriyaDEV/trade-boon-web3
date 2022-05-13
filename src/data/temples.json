@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "name": "วัดดูยูมีน",
+    "picture": "./images/tamboon/central.jpeg",
+    "province" : "กรุงไทย",
+    "region": "ใต้",
+    "rating": 5
+  },
+  {
+    "id": 1,
+    "name": "วัดดูยูมีน",
+    "picture": "./images/tamboon/central.jpeg",
+    "province" : "กรุงไทย",
+    "region": "ใต้",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "วัดดูยูมีน",
+    "picture": "./images/tamboon/central.jpeg",
+    "province" : "กรุงไทย",
+    "region": "ใต้",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "วัดดูยูมีน",
+    "picture": "./images/tamboon/central.jpeg",
+    "province" : "กรุงไทย",
+    "region": "ใต้",
+    "rating": 5
+  },
+  {
+    "id": 4,
+    "name": "วัดดูยูมีน",
+    "picture": "./images/tamboon/central.jpeg",
+    "province" : "กรุงไทย",
+    "region": "ใต้",
+    "rating": 5
+  }
+]

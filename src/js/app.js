@@ -1,5 +1,3 @@
-import data from "./data.controller"
-
 App = {
   web3Provider: null,
   contracts: {},
@@ -8,7 +6,13 @@ App = {
 
   init: async function () {
     // get temple data
-    temples = data.fetchTemples();
+    $.getJSON("../data/temples.json", function (data) {
+      temples = [...data];
+      showing = [...data];
+
+      showing.sort((templeA, templeB) => templeA.name.localeCompare(templeB.name, 'th'));
+      App.showTemples();
+    });
 
     return await App.initWeb3();
   },
@@ -56,17 +60,6 @@ App = {
     $(document).on("click", ".btn-buyPet", App.handlePayment);
   },
 
-  showWallet: function () {
-    web3.eth.getBalance(web3.eth.accounts[0], function (err, result) {
-      if (err) {
-        console.log(err);
-      } else {
-        const current_balance = web3.fromWei(result.toString(), "ether");
-        document.getElementById("my_wallet").innerHTML = current_balance;
-      }
-    });
-  },
-
   handlePayment: function (event) {
     event.preventDefault();
 
@@ -97,6 +90,28 @@ App = {
           console.log(err.message);
         });
     });
+  },
+
+  showWallet: function () {
+    web3.eth.getBalance(web3.eth.accounts[0], function (err, result) {
+      if (err) {
+        console.log(err);
+      } else {
+        const balance = web3.fromWei(result.toString(), "ether");
+        document.getElementById("my_balance").innerHTML = balance;
+      }
+    });
+  },
+
+  showTemples: function () {
+    const templeList = $("#temple-select").empty();
+    const templeFlex = $(".temple-flex");
+
+    for (let i = 0; i < temples.length; i++) {
+      starTemplate.find(".star-age").text(stars_display[i].age);
+    }
+
+    templeList.append(templeFlex.html());
   },
 };
 

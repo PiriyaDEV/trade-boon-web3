@@ -267,7 +267,7 @@ transform: scale(1.05);
 /* Sangkatarn */
 #sangkatarn-package{
     margin-top: 30px;
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-between;
     gap: 70px;
@@ -296,4 +296,64 @@ transform: scale(1.05);
     width: 100%;
     border-top-left-radius: 27px;
     border-top-right-radius: 27px;
+}
+
+/* Lottery */
+#lottery-package{
+    margin-top: 30px;
+    display: none;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#lottery-package > div > div{
+    /* display: flex; */
+    text-align: center;
+    /* gap: 40px; */
+}
+
+.lottery-clr{
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+#lottery-package > div > button{
+    margin-top: 0px;
+}
+
+#lottery-package > div{
+    display: flex;
+    gap: 20px;
+    width:100%;
+    justify-content:space-between;
+    text-align:center;
+    align-items:center;
+
+    background-color: #75623c;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 27px;
+}
+
+#lottery-number-section{
+    margin-top: 30px;
+
+    display: none;
+}
+
+.lottery-number{
+    margin: 20px 0px;
+    background-color: #75623c;
+}
+
+/* Rent */
+#rent-package{
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 70px;
+    margin-top: 30px;
+
+    display: none;
 }
