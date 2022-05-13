@@ -1,24 +1,14 @@
+import data from "./data.controller"
+
 App = {
   web3Provider: null,
   contracts: {},
+  temples: [],
+  showing: [],
 
   init: async function () {
-    // Load pets.
-    $.getJSON("../pets.json", function (data) {
-      var petsRow = $("#petsRow");
-      var petTemplate = $("#petTemplate");
-
-      for (i = 0; i < data.length; i++) {
-        petTemplate.find(".panel-title").text(data[i].name);
-        petTemplate.find("img").attr("src", data[i].picture);
-        petTemplate.find(".pet-breed").text(data[i].breed);
-        petTemplate.find(".pet-age").text(data[i].age);
-        petTemplate.find(".pet-location").text(data[i].location);
-        petTemplate.find(".pet-price").text(data[i].price);
-        petTemplate.find(".btn-buyPet").attr("data-price", data[i].price);
-        petsRow.append(petTemplate.html());
-      }
-    });
+    // get temple data
+    temples = data.fetchTemples();
 
     return await App.initWeb3();
   },
@@ -51,37 +41,38 @@ App = {
   },
 
   initContract: function () {
-    $.getJSON("PetStore.json", function (data) {
+    $.getJSON("TradeBoon.json", function (artifact) {
       // Get the necessary contract artifact file and instantiate it with @truffle/contract
-      var PetStoreArtifact = data;
-      App.contracts.PetStore = TruffleContract(PetStoreArtifact);
-      App.contracts.PetStore.setProvider(App.web3Provider);
-      App.myWallet();
+      App.contracts.TradeBoon = TruffleContract(artifact);
+      App.contracts.TradeBoon.setProvider(App.web3Provider);
+
+      App.showWallet();
     });
 
     return App.bindEvents();
   },
 
   bindEvents: function () {
-    $(document).on("click", ".btn-buyPet", App.handleBuyPet);
+    $(document).on("click", ".btn-buyPet", App.handlePayment);
   },
 
-  myWallet: function () {
+  showWallet: function () {
     web3.eth.getBalance(web3.eth.accounts[0], function (err, result) {
       if (err) {
         console.log(err);
       } else {
-        const mymoney = web3.fromWei(result.toString(), "ether");
-        document.getElementById("my_wallet").innerHTML = mymoney;
+        const current_balance = web3.fromWei(result.toString(), "ether");
+        document.getElementById("my_wallet").innerHTML = current_balance;
       }
     });
   },
 
-  handleBuyPet: function (event) {
+  handlePayment: function (event) {
     event.preventDefault();
 
-    var petPrice = $(event.target).data("price");
-    var eth_value_wei = web3.toWei(petPrice, "ether");
+    var templeId = $(event.target).data("id");
+    var amount = $(event.target).data("price");
+    var wei_value = web3.toWei(amount, "ether");
 
     web3.eth.getAccounts(function (error, accounts) {
       if (error) {
@@ -90,20 +81,17 @@ App = {
 
       var account = accounts[0];
 
-      App.contracts.PetStore.deployed()
+      App.contracts.TradeBoon.deployed()
         .then(function (instance) {
-          petStoreInstance = instance;
-
-          // Execute adopt as a transaction by sending account
-          return petStoreInstance.payPet(eth_value_wei, {
+          return instance.makeMerit(templeId, wei_value, {
             from: account,
-            value: eth_value_wei,
+            value: wei_value,
           });
         })
         .then(function (result) {
-          App.myWallet();
-          alert("Successful Payment. Thank You For Choosing Us :) ");
-          petStoreInstance.claimMoney();
+          console.log("Successfully paid to temple id " + result);
+
+          return App.showWallet();
         })
         .catch(function (err) {
           console.log(err.message);
