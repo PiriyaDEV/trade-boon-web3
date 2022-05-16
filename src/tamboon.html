@@ -37,7 +37,7 @@
         <div class="page-container">
           <div class="section pointer" onclick="linkPath('/index.html')">
             <h1 class="bg3-text">เทรดบุญ</h1>
-            <img class="nav-icon" src="./images/icon/icon-w.png" alt=""/>
+            <img class="nav-icon" src="./images/icon/icon-w.png" alt="" />
           </div>
 
           <div class="section">
@@ -48,7 +48,9 @@
           </div>
 
           <div id="nav-wallet">
-            <h1 class="bg-text">E-wallet : <span id="my_balance">0.00</span> ETH</h1>
+            <h1 class="bg-text">
+              E-wallet : <span id="my_balance">0.00</span> ETH
+            </h1>
           </div>
         </div>
       </div>
@@ -56,49 +58,73 @@
 
       <!-- Tamboon Page -->
       <div id="tamboon" class="section">
-          <div class="page-container">
-   
-            <div id="tamboon-select-section">
-                <h1 id="tamboon-title" class="bg4-text white-text shadow-text text-center">เลือกภูมิภาคที่ท่านสนใจ</h1>
+        <div class="page-container">
+          <div id="tamboon-select-section">
+            <h1
+              id="tamboon-title"
+              class="bg4-text white-text shadow-text text-center"
+            >
+              เลือกภูมิภาคที่ท่านสนใจ
+            </h1>
 
-                <!-- เลือกภูมิภาค -->
-                <div id="tamboon-select">
-                    <div class="tamboon-region north-region center" onclick="regionSelect('ภาคเหนือ')">
-                        <h1 class="bg4-text text-center shadow-text">ภาคเหนือ</h1>
-                    </div>  
+            <!-- เลือกภูมิภาค -->
+            <div id="tamboon-select">
+              <div
+                class="tamboon-region north-region center"
+                onclick="regionSelect('ภาคเหนือ')"
+              >
+                <h1 class="bg4-text text-center shadow-text">ภาคเหนือ</h1>
+              </div>
 
-                    <div class="tamboon-region esan-region center" onclick="regionSelect('ภาคตะวันออกเฉียงเหนือ')">
-                        <h1 class="bg4-text text-center shadow-text">ภาคตะวันออกเฉียงเหนือ</h1>
-                    </div>  
+              <div
+                class="tamboon-region esan-region center"
+                onclick="regionSelect('ภาคตะวันออกเฉียงเหนือ')"
+              >
+                <h1 class="bg4-text text-center shadow-text">
+                  ภาคตะวันออกเฉียงเหนือ
+                </h1>
+              </div>
 
-                    <div class="tamboon-region west-region center" onclick="regionSelect('ภาคตะวันตก')">
-                        <h1 class="bg4-text text-center shadow-text">ภาคตะวันตก</h1>
-                    </div>  
+              <div
+                class="tamboon-region west-region center"
+                onclick="regionSelect('ภาคตะวันตก')"
+              >
+                <h1 class="bg4-text text-center shadow-text">ภาคตะวันตก</h1>
+              </div>
 
-                    <div class="tamboon-region central-region center" onclick="regionSelect('ภาคกลาง')">
-                        <h1 class="bg4-text text-center shadow-text">ภาคกลาง</h1>
-                    </div>  
+              <div
+                class="tamboon-region central-region center"
+                onclick="regionSelect('ภาคกลาง')"
+              >
+                <h1 class="bg4-text text-center shadow-text">ภาคกลาง</h1>
+              </div>
 
-                    <div class="tamboon-region east-region center" onclick="regionSelect('ภาคตะวันออก')">
-                        <h1 class="bg4-text text-center shadow-text">ภาคตะวันออก</h1>
-                    </div>  
+              <div
+                class="tamboon-region east-region center"
+                onclick="regionSelect('ภาคตะวันออก')"
+              >
+                <h1 class="bg4-text text-center shadow-text">ภาคตะวันออก</h1>
+              </div>
 
-                    <div class="tamboon-region south-region center" onclick="regionSelect('ภาคใต้')">
-                        <h1 class="bg4-text text-center shadow-text">ภาคใต้</h1>
-                    </div>  
-                </div>
-                <!-- เลือกภูมิภาค -->
+              <div
+                class="tamboon-region south-region center"
+                onclick="regionSelect('ภาคใต้')"
+              >
+                <h1 class="bg4-text text-center shadow-text">ภาคใต้</h1>
+              </div>
+            </div>
+            <!-- เลือกภูมิภาค -->
 
-                <!-- เลือกวัด -->
-                <div id="temple-select-section">
-                    <div id="temple-search">
-                        <h1 class="md-text">ค้นหาวัด: </h1>
-                        <input class="md-text" placeholder="พิมพ์ชื่อวัด"/>
-                        <button class="md-text">ค้นหา</button>
-                    </div>
+            <!-- เลือกวัด -->
+            <div id="temple-select-section">
+              <div id="temple-search">
+                <h1 class="md-text">ค้นหาวัด:</h1>
+                <input class="md-text" placeholder="พิมพ์ชื่อวัด" />
+                <button class="md-text">ค้นหา</button>
+              </div>
 
-                    <div id="temple-select">
-                        <!-- <div class="temple-flex" data-id="0" onclick="packageSelect(temple)"">
+              <div id="temple-select">
+                <!-- <div class="temple-flex" data-id="0" onclick="packageSelect(temple)"">
                             <img src="./images/tamboon/central.jpeg" alt=""/>
                             <div>
                                 <h1 class="temple-info white-text md-text">ชื่อวัด: <span class="temple-name">N/A</span></h1>
@@ -115,288 +141,377 @@
                                 </div>
                             </div>
                         </div> -->
-                    </div>
-                </div>
-                <!-- เลือกวัด -->
-
-                <!-- วัด -->
-                <div class="temple-template" style="display: none;" data-id="0">
-                    <div class="temple-flex" onclick="packageSelect(temple)"">
-                        <img class="temple-picture" src="./images/tamboon/central.jpeg" alt=""/>
-                        <div>
-                            <h1 class="temple-info white-text md-text">ชื่อวัด: <span class="temple-name">N/A</span></h1>
-                            <h1 class="temple-info white-text md-text">จังหวัด: <span class="temple-province">N/A</span></h1>
-                            <div class="rating">
-                                <h1 class="white-text md-text">เรตติ้ง: </h1>
-                            <div id="temple-rating-list">
-                                
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="rating-template" style="display: none;" data-id="0">
-                    <img class="rating-star" src="./images/tamboon/icons8-star-100.png" alt=""/>
-                </div>
-                <!-- วัด -->
-
-                
-
-                <!-- เลือกแพคเกจ -->
-                <div id="package-select-section">
-                    <div id="package-feature">
-                        <div onclick="donatePackage('water-package')">
-                          <div class="feature-img">
-                            <img src="./images/main/donate-water.png" alt=""/>
-                          </div>
-                          <div> 
-                            <h1 class="md-text white-text">ทำบุญค่าน้ำ / ค่าไฟ</h1>
-                            <p class="ssm-text gray-text">กษัตริยาธิราชแอพพริคอทจัมโบ้ มิลค์พงษ์สเตอริโอเยอร์บีราเพรส</p>
-                          </div>
-                        </div>
-          
-                        <div onclick="donatePackage('sangkatarn-package')">
-                          <div class="feature-img">
-                            <img src="./images/main/sangkatarn.png" alt=""/>
-                          </div>
-                          <div> 
-                            <h1 class="md-text white-text">ทวายสังฆทาน</h1>
-                            <p class="ssm-text gray-text">กษัตริยาธิราชแอพพริคอทจัมโบ้ มิลค์พงษ์สเตอริโอเยอร์บีราเพรส</p>
-                          </div>
-                        </div>
-          
-                        <div onclick="donatePackage('lottery-package')">
-                          <div class="feature-img">
-                            <img src="./images/main/lottery.png" alt=""/>
-                          </div>
-                          <div> 
-                            <h1 class="md-text white-text">ขอหวย / เลขเด็ด</h1>
-                            <p class="ssm-text gray-text">กษัตริยาธิราชแอพพริคอทจัมโบ้ มิลค์พงษ์สเตอริโอเยอร์บีราเพรส</p>
-                          </div>
-                        </div>
-          
-                        <div onclick="donatePackage('rent-package')">
-                          <div class="feature-img">
-                            <img src="./images/main/rent.png" alt=""/>
-                          </div>
-                          <div> 
-                            <h1 class="md-text white-text">เช่าพระ</h1>
-                            <p class="ssm-text gray-text">กษัตริยาธิราชแอพพริคอทจัมโบ้ มิลค์พงษ์สเตอริโอเยอร์บีราเพรส</p>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <!-- เลือกแพคเกจ -->
-
-                <!-- บริจาคให้ -->
-                <div id="for-temple">
-                    <h1 class="md-text">วัดดูยูมีน : จังหวัดปทุมทานี</h1>
-                    <img src="./images/tamboon/central.jpeg" alt=""/>
-                </div>
-                <!-- บริจาคให้ -->
-
-                <!-- ทำบุญค่าน้ำ/ไฟ -->
-                <div id="water-package">
-                    <div class="section">
-                        <img id="water-img" src="./images/main/donate-water.png" alt=""/>
-                    </div>
-                    <div>
-                        <div class="water-input">
-                            <h1 class="md-text">ทำบุญค่าน้ำ</h1>
-                            <input class="md-text" placeholder="จำนวน"/>
-                            <h1 class="md-text">ETH</h1>
-                        </div>
-    
-                        <div class="water-input">
-                            <h1 class="md-text">ทำบุญค่าไฟ</h1>
-                            <input class="md-text" placeholder="จำนวน"/>
-                            <h1 class="md-text">ETH</h1>
-                        </div>
-    
-                        <div class="pray-section">
-                            <h1 class="md-text">คำอวยพร</h1>
-                            <textarea id="w3review" name="w3review" rows="4" cols="50" class="md-text" placeholder="เขียนคำอวยพร"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <!-- ทำบุญค่าน้ำ/ไฟ -->
-
-                <!-- ถวายสังฆทาน -->
-                <div id="sangkatarn-package">
-                    <div class="sangkatarn">
-                        <div>
-                            <img class="skt-img" src="./images/temp/sangkatarn.jpeg" alt=""/>
-                        </div>
-                        <div class="skt-info">   
-                            <h1 class="temple-info white-text md-text">Id: 000201210</h1>
-                            <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
-                            <button class="md-text button">ถวายเลย</button>
-                        </div>
-                    </div>
-                    <div class="sangkatarn">
-                        <div>
-                            <img class="skt-img" src="./images/temp/sangkatarn.jpeg" alt=""/>
-                        </div>
-                        <div class="skt-info">   
-                            <h1 class="temple-info white-text md-text">Id: 000201210</h1>
-                            <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
-                            <button class="md-text button">ถวายเลย</button>
-                        </div>
-                    </div>
-                    <div class="sangkatarn">
-                        <div>
-                            <img class="skt-img" src="./images/temp/sangkatarn.jpeg" alt=""/>
-                        </div>
-                        <div class="skt-info">   
-                            <h1 class="temple-info white-text md-text">Id: 000201210</h1>
-                            <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
-                            <button class="md-text button">ถวายเลย</button>
-                        </div>
-                    </div>
-                    <div class="sangkatarn">
-                        <div>
-                            <img class="skt-img" src="./images/temp/sangkatarn.jpeg" alt=""/>
-                        </div>
-                        <div class="skt-info">   
-                            <h1 class="temple-info white-text md-text">Id: 000201210</h1>
-                            <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
-                            <button class="md-text button">ถวายเลย</button>
-                        </div>
-                    </div>
-                    <div class="sangkatarn">
-                        <div>
-                            <img class="skt-img" src="./images/temp/sangkatarn.jpeg" alt=""/>
-                        </div>
-                        <div class="skt-info">   
-                            <h1 class="temple-info white-text md-text">Id: 000201210</h1>
-                            <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
-                            <button class="md-text button">ถวายเลย</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- ถวายสังฆทาน -->
-
-                <!-- ขอหวย -->
-                <div id="lottery-package">
-                    <div>
-                        <div class="lottery-clr">
-                            <h1 class="bg5-text">02</h1> 
-                        </div>
-                        <div>
-                            <h1 class="white-text bg3-text">ขอเลขเด็ด 2 ตัวท้าย</h1> 
-                            <h1 class="white-text bg3-text">ราคา 30.02324 ETH</h1> 
-                        </div>
-                        <button class="md-text button">ขอเลขเลย</button>
-                    </div>
-
-                    <div>
-                        <div class="lottery-clr">
-                            <h1 class="bg5-text">03</h1> 
-                        </div>
-                        <div>
-                            <h1 class="white-text bg3-text">ขอเลขเด็ด 3 ตัวท้าย</h1> 
-                            <h1 class="white-text bg3-text">ราคา 30.02324 ETH</h1> 
-                        </div>
-                        <button class="md-text button">ขอเลขเลย</button>
-                    </div>
-
-                    <div>
-                        <div class="lottery-clr">
-                            <h1 class="bg5-text">06</h1> 
-                        </div>
-                        <div>
-                            <h1 class="white-text bg3-text">ขอเลขเด็ด 6 ตัวเต็ม</h1> 
-                            <h1 class="white-text bg3-text">ราคา 30.02324 ETH</h1> 
-                        </div>
-                        <button class="md-text button">ขอเลขเลย</button>
-                    </div>
-                </div>
-                <!-- ขอหวย -->
-
-                <!-- ดูเลขหวย -->
-                <div id="lottery-number-section">
-                    <h1 class="bg4-text white-text shadow-text text-center">เลขเด็ดที่ท่านได้</h1>
-                    <div class="lottery-number center">
-                        <h1 class="bg5-text white-text text-center">123456</h1>
-                    </div>
-                    <h1 class="bg4-text white-text shadow-text text-center">ขอให้ท่านโชคดี และ ตามหาเลขนี้ให้เจอ !</h1>
-                </div>
-                <!-- ดูเลขหวย -->
-
-                <!-- เช่าพระ -->
-                <div id="rent-package">
-                    <div class="sangkatarn">
-                        <div>
-                            <img class="skt-img" src="./images/temp/sangkatarn.jpeg" alt=""/>
-                        </div>
-                        <div class="skt-info">   
-                            <h1 class="temple-info white-text md-text">Id: 000201210</h1>
-                            <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
-                            <button class="md-text button">ถวายเลย</button>
-                        </div>
-                    </div>
-
-                    <div class="sangkatarn">
-                        <div>
-                            <img class="skt-img" src="./images/temp/sangkatarn.jpeg" alt=""/>
-                        </div>
-                        <div class="skt-info">   
-                            <h1 class="temple-info white-text md-text">Id: 000201210</h1>
-                            <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
-                            <button class="md-text button">ถวายเลย</button>
-                        </div>
-                    </div>
-
-                    <div class="sangkatarn">
-                        <div>
-                            <img class="skt-img" src="./images/temp/sangkatarn.jpeg" alt=""/>
-                        </div>
-                        <div class="skt-info">   
-                            <h1 class="temple-info white-text md-text">Id: 000201210</h1>
-                            <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
-                            <button class="md-text button">ถวายเลย</button>
-                        </div>
-                    </div>
-
-                    <div class="sangkatarn">
-                        <div>
-                            <img class="skt-img" src="./images/temp/sangkatarn.jpeg" alt=""/>
-                        </div>
-                        <div class="skt-info">   
-                            <h1 class="temple-info white-text md-text">Id: 000201210</h1>
-                            <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
-                            <button class="md-text button">ถวายเลย</button>
-                        </div>
-                    </div>
-
-                    <div class="sangkatarn">
-                        <div>
-                            <img class="skt-img" src="./images/temp/sangkatarn.jpeg" alt=""/>
-                        </div>
-                        <div class="skt-info">   
-                            <h1 class="temple-info white-text md-text">Id: 000201210</h1>
-                            <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
-                            <button class="md-text button">ถวายเลย</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- เช่าพระ -->
-
-                <!-- จ่ายเงิน -->
-                <div id="payment-section">
-                    <div>
-                        <h1 class="md-text">สรุปยอดที่ท่านต้องชำระ</h1>
-                        <h1 class="md-text shadow-text">20.2345</h1>
-                        <h1 class="md-text">ETH</h1>
-                    </div>
-                    <button class="md-text button payment-btn">จ่ายเงิน</button>
-                </div>
-                <!-- จ่ายเงิน -->
-
+              </div>
             </div>
-            
+            <!-- เลือกวัด -->
+
+            <!-- วัด -->
+            <div class="temple-template" style="display: none">
+              <div class="temple-flex" onclick="templeSelect(this)">
+                <img
+                  class="temple-picture"
+                  src="./images/tamboon/central.jpeg"
+                  alt=""
+                />
+                <div>
+                  <h1 class="temple-info white-text md-text">
+                    ชื่อวัด: <span class="temple-name">N/A</span>
+                  </h1>
+                  <h1 class="temple-info white-text md-text">
+                    จังหวัด: <span class="temple-province">N/A</span>
+                  </h1>
+                  <div class="rating">
+                    <h1 class="white-text md-text">เรตติ้ง:</h1>
+                    <div id="temple-rating-list">
+                      <!-- <img class="rating-star" src="./images/tamboon/icons8-star-100.png" alt=""/> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rating-template" style="display: none">
+              <img
+                class="rating-star"
+                src="./images/tamboon/icons8-star-100.png"
+                alt=""
+              />
+            </div>
+            <!-- วัด -->
+
+            <!-- เลือกแพคเกจ -->
+            <div id="package-select-section">
+              <div id="package-feature">
+                <div onclick="donatePackage('water-package')">
+                  <div class="feature-img">
+                    <img src="./images/main/donate-water.png" alt="" />
+                  </div>
+                  <div>
+                    <h1 class="md-text white-text">ทำบุญค่าน้ำ / ค่าไฟ</h1>
+                    <p class="ssm-text gray-text">
+                      กษัตริยาธิราชแอพพริคอทจัมโบ้
+                      มิลค์พงษ์สเตอริโอเยอร์บีราเพรส
+                    </p>
+                  </div>
+                </div>
+
+                <div onclick="donatePackage('sangkatarn-package')">
+                  <div class="feature-img">
+                    <img src="./images/main/sangkatarn.png" alt="" />
+                  </div>
+                  <div>
+                    <h1 class="md-text white-text">ทวายสังฆทาน</h1>
+                    <p class="ssm-text gray-text">
+                      กษัตริยาธิราชแอพพริคอทจัมโบ้
+                      มิลค์พงษ์สเตอริโอเยอร์บีราเพรส
+                    </p>
+                  </div>
+                </div>
+
+                <div onclick="donatePackage('lottery-package')">
+                  <div class="feature-img">
+                    <img src="./images/main/lottery.png" alt="" />
+                  </div>
+                  <div>
+                    <h1 class="md-text white-text">ขอหวย / เลขเด็ด</h1>
+                    <p class="ssm-text gray-text">
+                      กษัตริยาธิราชแอพพริคอทจัมโบ้
+                      มิลค์พงษ์สเตอริโอเยอร์บีราเพรส
+                    </p>
+                  </div>
+                </div>
+
+                <div onclick="donatePackage('rent-package')">
+                  <div class="feature-img">
+                    <img src="./images/main/rent.png" alt="" />
+                  </div>
+                  <div>
+                    <h1 class="md-text white-text">เช่าพระ</h1>
+                    <p class="ssm-text gray-text">
+                      กษัตริยาธิราชแอพพริคอทจัมโบ้
+                      มิลค์พงษ์สเตอริโอเยอร์บีราเพรส
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- เลือกแพคเกจ -->
+
+            <!-- บริจาคให้ -->
+            <div id="for-temple">
+              <h1 class="md-text">วัดดูยูมีน : จังหวัดปทุมทานี</h1>
+              <img src="./images/tamboon/central.jpeg" alt="" />
+            </div>
+            <!-- บริจาคให้ -->
+
+            <!-- ทำบุญค่าน้ำ/ไฟ -->
+            <div id="water-package">
+              <div class="section">
+                <img
+                  id="water-img"
+                  src="./images/main/donate-water.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <div class="water-input">
+                  <h1 class="md-text">ทำบุญค่าน้ำ</h1>
+                  <input
+                    class="md-text water-amount"
+                    type="number"
+                    value="0"
+                    min="0"
+                    placeholder="จำนวน"
+                    onchange="sumAmount()"
+                  />
+                  <h1 class="md-text">ETH</h1>
+                </div>
+
+                <div class="water-input">
+                  <h1 class="md-text">ทำบุญค่าไฟ</h1>
+                  <input
+                    class="md-text electric-amount"
+                    type="number"
+                    value="0"
+                    min="0"
+                    placeholder="จำนวน"
+                    onchange="sumAmount()"
+                  />
+                  <h1 class="md-text">ETH</h1>
+                </div>
+
+                <div class="pray-section">
+                  <h1 class="md-text">คำอวยพร</h1>
+                  <textarea
+                    id="w3review"
+                    name="w3review"
+                    rows="4"
+                    cols="50"
+                    class="md-text"
+                    placeholder="เขียนคำอวยพร"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <!-- ทำบุญค่าน้ำ/ไฟ -->
+
+            <!-- ถวายสังฆทาน -->
+            <div id="sangkatarn-package">
+              <div class="sangkatarn">
+                <div>
+                  <img
+                    class="skt-img"
+                    src="./images/temp/sangkatarn.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="skt-info">
+                  <h1 class="temple-info white-text md-text">Id: 000201210</h1>
+                  <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
+                  <button class="md-text button">ถวายเลย</button>
+                </div>
+              </div>
+              <div class="sangkatarn">
+                <div>
+                  <img
+                    class="skt-img"
+                    src="./images/temp/sangkatarn.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="skt-info">
+                  <h1 class="temple-info white-text md-text">Id: 000201210</h1>
+                  <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
+                  <button class="md-text button">ถวายเลย</button>
+                </div>
+              </div>
+              <div class="sangkatarn">
+                <div>
+                  <img
+                    class="skt-img"
+                    src="./images/temp/sangkatarn.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="skt-info">
+                  <h1 class="temple-info white-text md-text">Id: 000201210</h1>
+                  <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
+                  <button class="md-text button">ถวายเลย</button>
+                </div>
+              </div>
+              <div class="sangkatarn">
+                <div>
+                  <img
+                    class="skt-img"
+                    src="./images/temp/sangkatarn.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="skt-info">
+                  <h1 class="temple-info white-text md-text">Id: 000201210</h1>
+                  <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
+                  <button class="md-text button">ถวายเลย</button>
+                </div>
+              </div>
+              <div class="sangkatarn">
+                <div>
+                  <img
+                    class="skt-img"
+                    src="./images/temp/sangkatarn.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="skt-info">
+                  <h1 class="temple-info white-text md-text">Id: 000201210</h1>
+                  <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
+                  <button class="md-text button">ถวายเลย</button>
+                </div>
+              </div>
+            </div>
+            <!-- ถวายสังฆทาน -->
+
+            <!-- ขอหวย -->
+            <div id="lottery-package">
+              <div>
+                <div class="lottery-clr">
+                  <h1 class="bg5-text">02</h1>
+                </div>
+                <div>
+                  <h1 class="white-text bg3-text">ขอเลขเด็ด 2 ตัวท้าย</h1>
+                  <h1 class="white-text bg3-text">ราคา 30.02324 ETH</h1>
+                </div>
+                <button class="md-text button">ขอเลขเลย</button>
+              </div>
+
+              <div>
+                <div class="lottery-clr">
+                  <h1 class="bg5-text">03</h1>
+                </div>
+                <div>
+                  <h1 class="white-text bg3-text">ขอเลขเด็ด 3 ตัวท้าย</h1>
+                  <h1 class="white-text bg3-text">ราคา 30.02324 ETH</h1>
+                </div>
+                <button class="md-text button">ขอเลขเลย</button>
+              </div>
+
+              <div>
+                <div class="lottery-clr">
+                  <h1 class="bg5-text">06</h1>
+                </div>
+                <div>
+                  <h1 class="white-text bg3-text">ขอเลขเด็ด 6 ตัวเต็ม</h1>
+                  <h1 class="white-text bg3-text">ราคา 30.02324 ETH</h1>
+                </div>
+                <button class="md-text button">ขอเลขเลย</button>
+              </div>
+            </div>
+            <!-- ขอหวย -->
+
+            <!-- ดูเลขหวย -->
+            <div id="lottery-number-section">
+              <h1 class="bg4-text white-text shadow-text text-center">
+                เลขเด็ดที่ท่านได้
+              </h1>
+              <div class="lottery-number center">
+                <h1 class="bg5-text white-text text-center">123456</h1>
+              </div>
+              <h1 class="bg4-text white-text shadow-text text-center">
+                ขอให้ท่านโชคดี และ ตามหาเลขนี้ให้เจอ !
+              </h1>
+            </div>
+            <!-- ดูเลขหวย -->
+
+            <!-- เช่าพระ -->
+            <div id="rent-package">
+              <div class="sangkatarn">
+                <div>
+                  <img
+                    class="skt-img"
+                    src="./images/temp/sangkatarn.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="skt-info">
+                  <h1 class="temple-info white-text md-text">Id: 000201210</h1>
+                  <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
+                  <button class="md-text button">ถวายเลย</button>
+                </div>
+              </div>
+
+              <div class="sangkatarn">
+                <div>
+                  <img
+                    class="skt-img"
+                    src="./images/temp/sangkatarn.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="skt-info">
+                  <h1 class="temple-info white-text md-text">Id: 000201210</h1>
+                  <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
+                  <button class="md-text button">ถวายเลย</button>
+                </div>
+              </div>
+
+              <div class="sangkatarn">
+                <div>
+                  <img
+                    class="skt-img"
+                    src="./images/temp/sangkatarn.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="skt-info">
+                  <h1 class="temple-info white-text md-text">Id: 000201210</h1>
+                  <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
+                  <button class="md-text button">ถวายเลย</button>
+                </div>
+              </div>
+
+              <div class="sangkatarn">
+                <div>
+                  <img
+                    class="skt-img"
+                    src="./images/temp/sangkatarn.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="skt-info">
+                  <h1 class="temple-info white-text md-text">Id: 000201210</h1>
+                  <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
+                  <button class="md-text button">ถวายเลย</button>
+                </div>
+              </div>
+
+              <div class="sangkatarn">
+                <div>
+                  <img
+                    class="skt-img"
+                    src="./images/temp/sangkatarn.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="skt-info">
+                  <h1 class="temple-info white-text md-text">Id: 000201210</h1>
+                  <h1 class="temple-info white-text md-text">ราคา: 2000 บาท</h1>
+                  <button class="md-text button">ถวายเลย</button>
+                </div>
+              </div>
+            </div>
+            <!-- เช่าพระ -->
+
+            <!-- จ่ายเงิน -->
+            <div id="payment-section">
+              <div>
+                <h1 class="md-text">สรุปยอดที่ท่านต้องชำระ</h1>
+                <h1 class="md-text shadow-text total-amount">0.0000</h1>
+                <h1 class="md-text">ETH</h1>
+              </div>
+              <button class="md-text button payment-btn">จ่ายเงิน</button>
+            </div>
+            <!-- จ่ายเงิน -->
           </div>
+        </div>
       </div>
       <!-- Tamboon Page -->
 
@@ -405,10 +520,12 @@
         <div class="page-container">
           <div class="section">
             <h1 class="bg3-text white-text">เทรดบุญ</h1>
-            <img class="nav-icon" src="./images/icon/icon-w.png" alt=""/>
+            <img class="nav-icon" src="./images/icon/icon-w.png" alt="" />
           </div>
           <div>
-            <h1 class="md-text white-text">© 2050 Trade Boon, All Rights Reserved.</h1>
+            <h1 class="md-text white-text">
+              © 2050 Trade Boon, All Rights Reserved.
+            </h1>
           </div>
         </div>
       </div>

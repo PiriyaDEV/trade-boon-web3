@@ -17,17 +17,23 @@ function fetchData() {
 function showTemples() {
   let templeList = $("#temple-select").empty();
   let templeFlex = $(".temple-template");
+  let ratingTemplate = $(".rating-template");
+  let ratingFlex = ratingTemplate.find(".rating-star");
 
-  for (let i = 0; i < temples.length; i++) {
-    templeFlex.find(".temple-picture").attr("src", temples[i].picture);
-    templeFlex.find(".temple-name").text(temples[i].name);
-    templeFlex.find(".temple-province").text(temples[i].province);
-    //templeFlex.find(".temple-flex").attr("data-id", temples[i].id);
+  const templesByRegion = temples.filter(
+    (temple) => temple.region === regionSelected
+  );
 
-    let ratingList = $("#temple-rating-list").empty();
-    let ratingFlex = $(".rating-template");
-    for (let j = 0; j < temples[i].rating; j++) {
-      ratingList.append(ratingFlex.html());
+  for (let i = 0; i < templesByRegion.length; i++) {
+    templeFlex.find(".temple-picture").attr("src", templesByRegion[i].picture);
+    templeFlex.find(".temple-name").text(templesByRegion[i].name);
+    templeFlex.find(".temple-province").text(templesByRegion[i].province);
+    templeFlex.find(".temple-flex").attr("temple-id", templesByRegion[i].id);
+
+    let list = templeFlex.find("#temple-rating-list").empty();
+
+    for (let j = 0; j < templesByRegion[i].rating; j++) {
+      list.append(ratingFlex.clone());
     }
 
     templeList.append(templeFlex.html());
@@ -46,12 +52,12 @@ function regionSelect(region) {
   document.getElementById("tamboon-title").innerHTML = "เลือกวัดที่ท่านต้องการ";
 }
 
-function packageSelect(temple) {
+function templeSelect(item) {
   var tamboon = document.getElementById("tamboon-select");
   var temple = document.getElementById("temple-select-section");
   var package = document.getElementById("package-select-section");
 
-  templeSelected = temple;
+  let templeSelected = $(item).attr("temple-id");
 
   tamboon.style.display = "none";
   temple.style.display = "none";
@@ -139,4 +145,12 @@ function backTo(page) {
   } else {
     donatePackage();
   }
+}
+
+function sumAmount() {
+  var totalAmount =
+    parseFloat($(".water-amount").val()) +
+    parseFloat($(".electric-amount").val());
+
+  $(".total-amount").text(totalAmount);
 }

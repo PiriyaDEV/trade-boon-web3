@@ -46,14 +46,12 @@ App = {
   },
 
   bindEvents: function () {
-    $(document).on("click", ".btn-buyPet", App.handlePayment);
+    $(document).on("click", ".payment-btn", App.handlePayment);
   },
 
-  handlePayment: function (event) {
-    event.preventDefault();
+  handlePayment: function () {
+    var amount = $(".total-amount").html();
 
-    var templeId = $(event.target).data("id");
-    var amount = $(event.target).data("price");
     var wei_value = web3.toWei(amount, "ether");
 
     web3.eth.getAccounts(function (error, accounts) {
@@ -65,20 +63,32 @@ App = {
 
       App.contracts.TradeBoon.deployed()
         .then(function (instance) {
-          return instance.makeMerit(templeId, wei_value, {
+          return instance.makeMerit(wei_value, {
             from: account,
             value: wei_value,
           });
         })
-        .then(function (result) {
-          console.log("Successfully paid to temple id " + result);
-
+        .then(function () {
+          App.showContractBalance();
           return App.showWallet();
         })
         .catch(function (err) {
           console.log(err.message);
         });
     });
+  },
+
+  showContractBalance: function () {
+    App.contracts.TradeBoon.deployed()
+      .then(function (instance) {
+        return instance.getBalance();
+      })
+      .then(function (result) {
+        console.log(web3.fromWei(result.toString(), "ether"));
+      })
+      .catch(function (err) {
+        console.log(err.message);
+      });
   },
 
   showWallet: function () {

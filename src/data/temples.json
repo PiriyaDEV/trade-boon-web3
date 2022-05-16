@@ -4,7 +4,7 @@
     "name": "วัดดูยูมีน1",
     "picture": "./images/tamboon/central.jpeg",
     "province" : "กรุงไทย",
-    "region": "ใต้",
+    "region": "ภาคเหนือ",
     "rating": 1
   },
   {
@@ -12,7 +12,7 @@
     "name": "วัดดูยูมีน2",
     "picture": "./images/tamboon/central.jpeg",
     "province" : "กรุงไทย",
-    "region": "ใต้",
+    "region": "ภาคเหนือ",
     "rating": 4
   },
   {
@@ -20,7 +20,7 @@
     "name": "วัดดูยูมีน3",
     "picture": "./images/tamboon/central.jpeg",
     "province" : "กรุงไทย",
-    "region": "ใต้",
+    "region": "ภาคตะวันออกเฉียงเหนือ",
     "rating": 3
   },
   {
@@ -28,7 +28,7 @@
     "name": "วัดดูยูมีน4",
     "picture": "./images/tamboon/central.jpeg",
     "province" : "กรุงไทย",
-    "region": "ใต้",
+    "region": "ภาคตะวันตก",
     "rating": 5
   },
   {
@@ -36,7 +36,23 @@
     "name": "วัดดูยูมีน5",
     "picture": "./images/tamboon/central.jpeg",
     "province" : "กรุงไทย",
-    "region": "ใต้",
+    "region": "ภาคกลาง",
+    "rating": 2
+  },
+  {
+    "id": 5,
+    "name": "วัดดูยูมีน6",
+    "picture": "./images/tamboon/central.jpeg",
+    "province" : "กรุงไทย",
+    "region": "ภาคใต้",
+    "rating": 4
+  },
+  {
+    "id": 6,
+    "name": "วัดดูยูมีน7",
+    "picture": "./images/tamboon/central.jpeg",
+    "province" : "กรุงไทย",
+    "region": "ภาคตะวันออก",
     "rating": 2
   }
 ]
