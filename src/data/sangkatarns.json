@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "name": "ชุดสังฆทานรวม (จัมโบ้)",
+    "picture": "./images/temp/sangkatarn.jpeg",
+    "price": 1.0
+  },
+  {
+    "id": 1,
+    "name": "ชุดสังฆทาน (ใหญ่)",
+    "picture": "./images/temp/sangkatarn.jpeg",
+    "price": 0.75
+  },
+  {
+    "id": 2,
+    "name": "ชุดสังฆทาน (กลาง)",
+    "picture": "./images/temp/sangkatarn.jpeg",
+    "price": 0.5
+  },
+  {
+    "id": 3,
+    "name": "ชุดสังฆทาน (เล็ก)",
+    "picture": "./images/temp/sangkatarn.jpeg",
+    "price": 0.25
+  },
+  {
+    "id": 4,
+    "name": "ชุดสังฆทานยา",
+    "picture": "./images/temp/sangkatarn.jpeg",
+    "price": 0.12
+  },
+  {
+    "id": 5,
+    "name": "ชุดสังฆทานอาหารแห้ง",
+    "picture": "./images/temp/sangkatarn.jpeg",
+    "price": 0.055
+  },
+  {
+    "id": 6,
+    "name": "ชุดสังฆทานเครื่องนุ่งห่ม",
+    "picture": "./images/temp/sangkatarn.jpeg",
+    "price": 0.048
+  },
+  {
+    "id": 7,
+    "name": "ชุดสังฆทานเครื่องเขียน",
+    "picture": "./images/temp/sangkatarn.jpeg",
+    "price": 0.0025
+  }
+]

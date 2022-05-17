@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "name": "พระ (จัมโบ้)",
+    "picture": "./images/temp/monk_for_rent.jpg",
+    "price": 15.07
+  },
+  {
+    "id": 1,
+    "name": "พระ (ใหญ่)",
+    "picture": "./images/temp/monk_for_rent.jpg",
+    "price": 18.3
+  },
+  {
+    "id": 2,
+    "name": "พระ (กลาง)",
+    "picture": "./images/temp/monk_for_rent.jpg",
+    "price": 9.8889
+  },
+  {
+    "id": 3,
+    "name": "พระ (เล็ก)",
+    "picture": "./images/temp/monk_for_rent.jpg",
+    "price": 7.0016
+  },
+  {
+    "id": 4,
+    "name": "พระเจ้า",
+    "picture": "./images/temp/monk_for_rent.jpg",
+    "price": 94.12
+  },
+  {
+    "id": 5,
+    "name": "พระราม",
+    "picture": "./images/temp/monk_for_rent.jpg",
+    "price": 5.84
+  },
+  {
+    "id": 6,
+    "name": "พระง่วง",
+    "picture": "./images/temp/monk_for_rent.jpg",
+    "price": 112.8
+  },
+  {
+    "id": 7,
+    "name": "พระนอน",
+    "picture": "./images/temp/monk_for_rent.jpg",
+    "price": 9.602
+  }
+]

@@ -1,15 +1,15 @@
 [
   {
     "id": 0,
-    "name": "วัดดูยูมีน1",
-    "picture": "./images/tamboon/central.jpeg",
-    "province" : "กรุงไทย",
+    "name": "วัดสิงห์",
+    "picture": "./images/tamboon/east.jpeg",
+    "province" : "กรุงเทพ",
     "region": "ภาคเหนือ",
     "rating": 1
   },
   {
     "id": 1,
-    "name": "วัดดูยูมีน2",
+    "name": "วัดมงคลวราราม",
     "picture": "./images/tamboon/central.jpeg",
     "province" : "กรุงไทย",
     "region": "ภาคเหนือ",
@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "name": "วัดดูยูมีน3",
+    "name": "วัดศาลาครืน",
     "picture": "./images/tamboon/central.jpeg",
     "province" : "กรุงไทย",
     "region": "ภาคตะวันออกเฉียงเหนือ",
@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "name": "วัดดูยูมีน4",
+    "name": "วัดโพธิทอง",
     "picture": "./images/tamboon/central.jpeg",
     "province" : "กรุงไทย",
     "region": "ภาคตะวันตก",
@@ -33,7 +33,7 @@
   },
   {
     "id": 4,
-    "name": "วัดดูยูมีน5",
+    "name": "วัดโพธิ์แก้ว",
     "picture": "./images/tamboon/central.jpeg",
     "province" : "กรุงไทย",
     "region": "ภาคกลาง",
@@ -41,7 +41,7 @@
   },
   {
     "id": 5,
-    "name": "วัดดูยูมีน6",
+    "name": "วัดแก้วไพฑูรย์",
     "picture": "./images/tamboon/central.jpeg",
     "province" : "กรุงไทย",
     "region": "ภาคใต้",
@@ -49,10 +49,34 @@
   },
   {
     "id": 6,
-    "name": "วัดดูยูมีน7",
+    "name": "วัดไทร",
     "picture": "./images/tamboon/central.jpeg",
     "province" : "กรุงไทย",
     "region": "ภาคตะวันออก",
     "rating": 2
+  },
+  {
+    "id": 7,
+    "name": "วัดสิรินธรวราราม",
+    "picture": "./images/tamboon/central.jpeg",
+    "province" : "อุบลราชธานี",
+    "region": "ภาคตะวันออกเฉียงเหนือ",
+    "rating": 4
+  },
+  {
+    "id": 8,
+    "name": "วัดพระธาตุหนองบัว",
+    "picture": "./images/tamboon/central.jpeg",
+    "province" : "อุบลราชธานี",
+    "region": "ภาคตะวันออกเฉียงเหนือ",
+    "rating": 3
+  },
+  {
+    "id": 9,
+    "name": "วัดทุ่งศรีเมือง",
+    "picture": "./images/tamboon/central.jpeg",
+    "province" : "อุบลราชธานี",
+    "region": "ภาคตะวันออกเฉียงเหนือ",
+    "rating": 5
   }
 ]

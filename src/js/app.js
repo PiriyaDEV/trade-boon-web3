@@ -46,12 +46,68 @@ App = {
   },
 
   bindEvents: function () {
-    $(document).on("click", ".payment-btn", App.handlePayment);
+    $(document).on("click", ".payment-btn", App.payWaterElectric);
+    $(document).on("click", ".sangkatarn-btn", App.paySangkatarn);
+    $(document).on("click", ".lottory-btn", App.payLottory);
+    $(document).on("click", ".monk-btn", App.payMonk);
   },
 
-  handlePayment: function () {
+  payWaterElectric: function () {
     var amount = $(".total-amount").html();
 
+    App.handlePayment(amount);
+  },
+
+  paySangkatarn: function (event) {
+    event.preventDefault();
+
+    var amount = $(event.target).data("price");
+
+    App.handlePayment(amount);
+  },
+
+  payLottory: function (event) {
+    event.preventDefault();
+
+    var amount = $(event.target).attr("value");
+    var type = $(event.target).attr("name");
+    var wei_value = web3.toWei(amount, "ether");
+
+    web3.eth.getAccounts(function (error, accounts) {
+      if (error) {
+        console.log(error);
+      }
+
+      var account = accounts[0];
+
+      App.contracts.TradeBoon.deployed()
+        .then(function (instance) {
+          return instance.makeMerit(wei_value, {
+            from: account,
+            value: wei_value,
+          });
+        })
+        .then(function () {
+          App.randomLottoryNumber(type);
+          App.showContractBalance();
+
+          return App.showWallet();
+        })
+        .catch(function (err) {
+          console.log(err.message);
+        });
+    });
+  },
+
+  payMonk: function (event) {
+    event.preventDefault();
+
+    var amount = $(event.target).data("price");
+
+    App.handlePayment(amount);
+  },
+
+  handlePayment: function (amount) {
     var wei_value = web3.toWei(amount, "ether");
 
     web3.eth.getAccounts(function (error, accounts) {
@@ -100,6 +156,14 @@ App = {
         document.getElementById("my_balance").innerHTML = balance;
       }
     });
+  },
+
+  randomLottoryNumber: function (n) {
+    let result =
+      Math.floor(Math.random() * (9 * Math.pow(10, n - 1))) +
+      Math.pow(10, n - 1);
+
+    document.getElementById("lucky-lottery-number").innerHTML = result;
   },
 };
 
