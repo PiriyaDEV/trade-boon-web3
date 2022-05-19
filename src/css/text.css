@@ -170,10 +170,18 @@ p{
     .bg4-text {
       font-size: 3em;
     }
+
+    .bg5-text {
+      font-size: 5em;
+    }
   }
   
   @media screen and (max-width: 414px) {
     .bg-text {
       font-size: 2em;
+    }
+
+    .bg5-text {
+      font-size: 4em;
     }
   }

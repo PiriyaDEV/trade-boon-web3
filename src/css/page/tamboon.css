@@ -105,6 +105,8 @@ transform: scale(1.05);
     width: 100%;
     border-top-right-radius: 27px;
     border-top-left-radius: 27px;
+    height: 180px;
+    object-fit: cover;
 }
 
 .rating-star{
@@ -296,6 +298,8 @@ transform: scale(1.05);
     width: 100%;
     border-top-left-radius: 27px;
     border-top-right-radius: 27px;
+    height: 180px;
+    object-fit: cover;
 }
 
 /* Lottery */
@@ -356,4 +360,96 @@ transform: scale(1.05);
     margin-top: 30px;
 
     display: none;
+}
+
+@media screen and (max-width: 1280px) {
+    #temple-select{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+#water-package{
+    /* display: flex; */
+    flex-direction: column;
+    }
+
+    #rent-package, #sangkatarn-package{
+        gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #navbar > div, #footer > div{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #temple-search{
+        gap: 20px;
+    }
+
+    #temple-select{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #tamboon-select{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #rent-package,  #sangkatarn-package{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #lottery-package > div{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #package-feature{
+        grid-template-columns: 1fr;
+    }
+
+    #water-img{
+        width: 80%;
+    }
+
+    #w3review{
+        width: 100%;
+    }
+
+    #payment-section{
+        flex-direction: column;
+    }
+
+    #rent-package, #sangkatarn-package{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 470px) {
+    #navbar > div > div:nth-child(2){
+        flex-direction: column;
+    }
+
+    #tamboon-select{
+        grid-template-columns: 1fr;
+    }
+
+    #temple-search{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #temple-select{
+        grid-template-columns: 1fr;
+    }
 }

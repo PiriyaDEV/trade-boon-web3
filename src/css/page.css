@@ -53,8 +53,8 @@ body {
     .navbar-container {
       width: 960px;
       max-width: 960px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
   }
   @media screen and (max-width: 768px) {
@@ -78,6 +78,8 @@ body {
     .navbar-container {
       width: 374px;
       max-width: 374px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
   @media screen and (max-width: 375px) {

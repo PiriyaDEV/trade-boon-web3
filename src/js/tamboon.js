@@ -159,8 +159,15 @@ function donatePackage(packageName) {
   package.style.display = "none";
   forTemple.style.display = "flex";
 
+  var mobileRes = window.matchMedia("(max-width: 1280px)")
+
   if (packageName === "water-package") {
-    selectedPackage.style.display = "grid";
+    if(mobileRes.matches){
+      selectedPackage.style.display = "flex";
+    }
+    else{
+      selectedPackage.style.display = "grid";
+    }
     payment.style.display = "flex";
     document.getElementById("tamboon-title").innerHTML = "ทำบุญค่าน้ำ / ค่าไฟ";
   } else if (packageName === "sangkatarn-package") {

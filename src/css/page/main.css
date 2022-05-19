@@ -119,3 +119,96 @@
     gap: 50px;
     padding: 0px 30px;
 }
+
+@media screen and (max-width: 1280px) {
+    #wai-pic{
+        width: 300px;
+    }
+
+    #temple-img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    #main-banner-section{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 70px 0px 50px 0px;
+    }
+
+    #main-temple-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user-absolute{
+        right: inherit;
+        bottom: inherit;
+        top: 250px;;
+    }
+
+    .button{
+        width: 100%;
+        padding: 25px 40px;
+    }
+
+    #main-feature{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #navbar > div, #footer > div{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #review-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #wai-pic{
+        width: 250px;
+    }
+
+    #main-feature{
+        grid-template-columns: 1fr;
+    }
+
+    #temple-img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 467px) {
+    #navbar > div > div:nth-child(2){
+        flex-direction: column;
+    }
+    #wai-pic{
+        width: 200px;
+    }
+
+    #temple-img{
+        width: 250px;
+    }
+
+    #review-grid, #main-feature{
+        padding: 0px 10px;
+    }
+
+    .user-absolute{
+        top: 150px;
+    }
+
+    .user-absolute{
+        width: 250px;
+    }
+}
