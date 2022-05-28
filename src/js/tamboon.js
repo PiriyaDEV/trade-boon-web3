@@ -159,13 +159,12 @@ function donatePackage(packageName) {
   package.style.display = "none";
   forTemple.style.display = "flex";
 
-  var mobileRes = window.matchMedia("(max-width: 1280px)")
+  var mobileRes = window.matchMedia("(max-width: 1280px)");
 
   if (packageName === "water-package") {
-    if(mobileRes.matches){
+    if (mobileRes.matches) {
       selectedPackage.style.display = "flex";
-    }
-    else{
+    } else {
       selectedPackage.style.display = "grid";
     }
     payment.style.display = "flex";
