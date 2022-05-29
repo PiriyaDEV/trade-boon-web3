@@ -1,25 +1,25 @@
 [
   {
     "id": 0,
-    "name": "พระ (จัมโบ้)",
+    "name": "พระ (ใหญ่)",
     "picture": "./images/temp/monk_for_rent.jpg",
     "price": 15.07
   },
   {
     "id": 1,
-    "name": "พระ (ใหญ่)",
+    "name": "พระ (กลาง)",
     "picture": "./images/temp/monk_for_rent.jpg",
     "price": 18.3
   },
   {
     "id": 2,
-    "name": "พระ (กลาง)",
+    "name": "พระ (เล็ก)",
     "picture": "./images/temp/monk_for_rent.jpg",
     "price": 9.8889
   },
   {
     "id": 3,
-    "name": "พระ (เล็ก)",
+    "name": "พระคุณที่สาม",
     "picture": "./images/temp/monk_for_rent.jpg",
     "price": 7.0016
   },

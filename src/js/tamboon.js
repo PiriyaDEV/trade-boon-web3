@@ -109,13 +109,13 @@ function showMonks() {
 function regionSelect(region) {
   var tamboon = document.getElementById("tamboon-select");
   var temple = document.getElementById("temple-select-section");
-  var package = document.getElementById("package-select-section");
+  var packages = document.getElementById("package-select-section");
   regionSelected = region;
   showTemples();
   regionClick = true;
   tamboon.style.display = "none";
   temple.style.display = "grid";
-  package.style.display = "none";
+  packages.style.display = "none";
   document.getElementById("tamboon-title").innerHTML = "เลือกวัดที่ท่านต้องการ";
   document.getElementById("buttonTemple").classList.remove("gray-text");
 }
@@ -123,7 +123,7 @@ function regionSelect(region) {
 function templeSelect(item) {
   var tamboon = document.getElementById("tamboon-select");
   var temple = document.getElementById("temple-select-section");
-  var package = document.getElementById("package-select-section");
+  var packages = document.getElementById("package-select-section");
 
   let selectId = $(item).attr("temple-id");
 
@@ -136,7 +136,7 @@ function templeSelect(item) {
 
   tamboon.style.display = "none";
   temple.style.display = "none";
-  package.style.display = "inherit";
+  packages.style.display = "inherit";
 
   document.getElementById("tamboon-title").innerHTML =
     "เลือกแพคเกจที่ท่านต้องการ";
@@ -147,7 +147,7 @@ function templeSelect(item) {
 function donatePackage(packageName) {
   var tamboon = document.getElementById("tamboon-select");
   var temple = document.getElementById("temple-select-section");
-  var package = document.getElementById("package-select-section");
+  var packages = document.getElementById("package-select-section");
   var selectedPackage = document.getElementById(packageName);
   var payment = document.getElementById("payment-section");
   var forTemple = document.getElementById("for-temple");
@@ -156,7 +156,7 @@ function donatePackage(packageName) {
 
   tamboon.style.display = "none";
   temple.style.display = "none";
-  package.style.display = "none";
+  packages.style.display = "none";
   forTemple.style.display = "flex";
 
   var mobileRes = window.matchMedia("(max-width: 1280px)");
@@ -195,7 +195,7 @@ function donatePackage(packageName) {
 function displayAllNone() {
   var tamboon = document.getElementById("tamboon-select");
   var temple = document.getElementById("temple-select-section");
-  var package = document.getElementById("package-select-section");
+  var packages = document.getElementById("package-select-section");
   var payment = document.getElementById("payment-section");
   var water = document.getElementById("water-package");
   var sangkatarn = document.getElementById("sangkatarn-package");
@@ -205,7 +205,7 @@ function displayAllNone() {
   var rentmonk = document.getElementById("rent-package");
   tamboon.style.display = "none";
   temple.style.display = "none";
-  package.style.display = "none";
+  packages.style.display = "none";
   payment.style.display = "none";
   water.style.display = "none";
   sangkatarn.style.display = "none";
@@ -218,7 +218,7 @@ function displayAllNone() {
 function backTo(page) {
   var tamboon = document.getElementById("tamboon-select");
   var temple = document.getElementById("temple-select-section");
-  var package = document.getElementById("package-select-section");
+  var packages = document.getElementById("package-select-section");
   var payment = document.getElementById("payment-section");
   if (page === "region") {
     displayAllNone();
@@ -248,7 +248,7 @@ function backTo(page) {
       displayAllNone();
       packageClick = false;
       document.getElementById("buttonDonate").classList.add("gray-text");
-      package.style.display = "inherit";
+      packages.style.display = "inherit";
       document.getElementById("tamboon-title").innerHTML =
         "เลือกแพคเกจที่ท่านต้องการ";
     }
