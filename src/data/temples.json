@@ -1,64 +1,64 @@
 [
   {
     "id": 0,
-    "name": "วัดสิงห์",
-    "picture": "./images/tamboon/east.jpeg",
+    "name": "วัดโพธิ์ท่าเตียน",
+    "picture": "./images/tamboon/temples/0.jpg",
     "province" : "กรุงเทพ",
-    "region": "ภาคเหนือ",
-    "rating": 1
-  },
-  {
-    "id": 1,
-    "name": "วัดมงคลวราราม",
-    "picture": "./images/tamboon/central.jpeg",
-    "province" : "กรุงไทย",
-    "region": "ภาคเหนือ",
-    "rating": 4
-  },
-  {
-    "id": 2,
-    "name": "วัดศาลาครืน",
-    "picture": "./images/tamboon/central.jpeg",
-    "province" : "กรุงไทย",
-    "region": "ภาคตะวันออกเฉียงเหนือ",
-    "rating": 3
-  },
-  {
-    "id": 3,
-    "name": "วัดโพธิทอง",
-    "picture": "./images/tamboon/central.jpeg",
-    "province" : "กรุงไทย",
-    "region": "ภาคตะวันตก",
+    "region": "ภาคกลาง",
     "rating": 5
   },
   {
-    "id": 4,
-    "name": "วัดโพธิ์แก้ว",
-    "picture": "./images/tamboon/central.jpeg",
-    "province" : "กรุงไทย",
+    "id": 1,
+    "name": "วัดราชนัดดารามวรวิหาร",
+    "picture": "./images/tamboon/temples/1.jpeg",
+    "province" : "กรุงเทพ",
+    "region": "ภาคกลาง",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "วัดยานนาวา",
+    "picture": "./images/tamboon/temples/2.jfif",
+    "province" : "กรุงเทพ",
+    "region": "ภาคกลาง",
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "name": "วัดพนัญเชิงวรวิหาร",
+    "picture": "./images/tamboon/temples/3.jfif",
+    "province" : "พระนครศรีอยุธยา",
     "region": "ภาคกลาง",
     "rating": 2
   },
   {
+    "id": 4,
+    "name": "วัดกษัตราธิราชวรวิหาร",
+    "picture": "./images/tamboon/temples/4.jfif",
+    "province" : "พระนครศรีอยุธยา",
+    "region": "ภาคกลาง",
+    "rating": 3
+  },
+  {
     "id": 5,
-    "name": "วัดแก้วไพฑูรย์",
-    "picture": "./images/tamboon/central.jpeg",
-    "province" : "กรุงไทย",
-    "region": "ภาคใต้",
+    "name": "วัดท่าไม้",
+    "picture": "./images/tamboon/temples/5.jpg",
+    "province" : "สมุทรสาคร",
+    "region": "ภาคกลาง",
     "rating": 4
   },
   {
     "id": 6,
-    "name": "วัดไทร",
-    "picture": "./images/tamboon/central.jpeg",
-    "province" : "กรุงไทย",
-    "region": "ภาคตะวันออก",
+    "name": "วัดพระธาตุผาซ่อนแก้ว",
+    "picture": "./images/tamboon/temples/6.jpg",
+    "province" : "เพชรบูรณ์",
+    "region": "ภาคกลาง",
     "rating": 2
   },
   {
     "id": 7,
-    "name": "วัดสิรินธรวราราม",
-    "picture": "./images/tamboon/central.jpeg",
+    "name": "วัดสิรินธรวรารามภูพร้าว",
+    "picture": "./images/tamboon/temples/7.jpg",
     "province" : "อุบลราชธานี",
     "region": "ภาคตะวันออกเฉียงเหนือ",
     "rating": 4
@@ -66,7 +66,7 @@
   {
     "id": 8,
     "name": "วัดพระธาตุหนองบัว",
-    "picture": "./images/tamboon/central.jpeg",
+    "picture": "./images/tamboon/temples/8.jpg",
     "province" : "อุบลราชธานี",
     "region": "ภาคตะวันออกเฉียงเหนือ",
     "rating": 3
@@ -74,9 +74,129 @@
   {
     "id": 9,
     "name": "วัดทุ่งศรีเมือง",
-    "picture": "./images/tamboon/central.jpeg",
+    "picture": "./images/tamboon/temples/9.jpeg",
     "province" : "อุบลราชธานี",
     "region": "ภาคตะวันออกเฉียงเหนือ",
+    "rating": 3
+  },
+  {
+    "id": 10,
+    "name": "วัดไชโยวรวิหาร",
+    "picture": "./images/tamboon/temples/10.jpg",
+    "province" : "อ่างทอง",
+    "region": "ภาคกลาง",
+    "rating": 5
+  },
+  {
+    "id": 11,
+    "name": "วัดป่าภูหายหลง",
+    "picture": "./images/tamboon/temples/11.jfif",
+    "province" : "นครราชสีมา",
+    "region": "ภาคตะวันออกเฉียงเหนือ",
+    "rating": 1
+  },
+  {
+    "id": 12,
+    "name": "วัดมกุฏคีรีวัน",
+    "picture": "./images/tamboon/temples/12.jfif",
+    "province" : "นครราชสีมา",
+    "region": "ภาคตะวันออกเฉียงเหนือ",
+    "rating": 3
+  },
+  {
+    "id": 13,
+    "name": "วัดพระธาตุเรณู",
+    "picture": "./images/tamboon/temples/13.jpg",
+    "province" : "นครพนม",
+    "region": "ภาคตะวันออกเฉียงเหนือ",
+    "rating": 5
+  },
+  {
+    "id": 14,
+    "name": "วัดพระธาตุดอยสุเทพ",
+    "picture": "./images/tamboon/temples/14.jfif",
+    "province" : "เชียงใหม่",
+    "region": "ภาคเหนือ",
+    "rating": 5
+  },
+  {
+    "id": 15,
+    "name": "วัดร่องเสือเต้น",
+    "picture": "./images/tamboon/temples/15.jfif",
+    "province" : "เชียงราย",
+    "region": "ภาคเหนือ",
+    "rating": 2
+  },
+  {
+    "id": 16,
+    "name": "วัดพระแก้วดอนเต้าสุชาดาราม",
+    "picture": "./images/tamboon/temples/16.jpg",
+    "province" : "ลำปาง",
+    "region": "ภาคเหนือ",
+    "rating": 4
+  },
+  {
+    "id": 17,
+    "name": "วัดพระบรมธาตุสวี",
+    "picture": "./images/tamboon/temples/17.jpg",
+    "province" : "ชุมพร",
+    "region": "ภาคใต้",
+    "rating": 5
+  },
+  {
+    "id": 18,
+    "name": "วัดปลายแหลม",
+    "picture": "./images/tamboon/temples/18.jpg",
+    "province" : "สุราษฎร์ธานี",
+    "region": "ภาคใต้",
+    "rating": 4
+  },
+  {
+    "id": 19,
+    "name": "วัดถ้ำเขาฉกรรจ์",
+    "picture": "./images/tamboon/temples/19.jpg",
+    "province" : "สระแก้ว",
+    "region": "ภาคตะวันออก",
+    "rating": 4
+  },
+  {
+    "id": 20,
+    "name": "วัดแสนสุขสุทธิวราราม",
+    "picture": "./images/tamboon/temples/20.jpg",
+    "province" : "ชลบุรี",
+    "region": "ภาคตะวันออก",
+    "rating": 3
+  },
+  {
+    "id": 21,
+    "name": "วัดถ้ำพุหว้า",
+    "picture": "./images/tamboon/temples/21.jpg",
+    "province" : "กาญจนบุรี",
+    "region": "ภาคตะวันตก",
+    "rating": 5
+  },
+  {
+    "id": 22,
+    "name": "วัดเขากะโหลก",
+    "picture": "./images/tamboon/temples/22.jpg",
+    "province" : "ประจวบคีรีขันธ์",
+    "region": "ภาคตะวันตก",
+    "rating": 2
+  },
+  {
+    "id": 23,
+    "name": "วัดใหญ่สุวรรณาราม",
+    "picture": "./images/tamboon/temples/23.jpg",
+    "province" : "เพชรบุรี",
+    "region": "ภาคตะวันตก",
+    "rating": 4
+  },
+  {
+    "id": 24,
+    "name": "วัดคงคาราม",
+    "picture": "./images/tamboon/temples/24.jpg",
+    "province" : "ราชบุรี",
+    "region": "ภาคตะวันตก",
     "rating": 5
   }
 ]
